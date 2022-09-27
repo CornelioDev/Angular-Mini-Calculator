@@ -1,9 +1,15 @@
-<h1>{{title}}</h1>
-<form>
-  <input type="number" placeholder="Number 1" [(ngModel)]="number1" name="number1"><br><br>
-  <input type="number" placeholder="Number 2" [(ngModel)]="number2" name="number2"><br><br>
-  <input type="submit" value="Addition (+)" (click)="sum()">
-  <input type="submit" value="Substraction (-)" (click)="sub()">
-</form>
-
-<p>Result: <b>{{result}}</b></p>
+<div class="container">
+  <div class="row">
+    <div class="col-4 mx-auto mt-5 text-center">
+      <h1>{{title}}</h1>
+      <form class="mt-4">
+        <input type="number" placeholder="Number 1" [(ngModel)]="number1" name="number1"><br><br>
+        <input type="number" placeholder="Number 2" [(ngModel)]="number2" name="number2"><br><br>
+        <input type="submit" class="submit btn btn-primary btn-sm" value="Addition (+)" (click)="sum()">
+        <input type="submit" class="submit btn btn-danger btn-sm" value="Substraction (-)" (click)="sub()">
+      </form>
+      
+      <p class="mt-4">Result: <b>{{result}}</b></p>
+    </div>
+  </div>
+</div>

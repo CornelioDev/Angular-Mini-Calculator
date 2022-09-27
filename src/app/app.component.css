@@ -1,0 +1,7 @@
+.submit {
+    margin-right: 1em;
+}
+
+.submit:last-child {
+    margin: 0;
+}
